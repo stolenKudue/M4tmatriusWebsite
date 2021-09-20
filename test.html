@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+    <style>
+      @media only screen and (min-width: 701px) {
+        /* hide the hamburger */
+        .hamburger {
+          display: none;
+        }
+        /* show all the nav-buttons */
+        .nav-button {
+          display: block;
+        }
+      }
+      /* if browser window is small (max-width) */
+
+      @media only screen and (max-width: 700px) {
+        /* show everything with the hamburger class */
+        .hamburger {
+          display: block;
+        }
+        /* hide all the nav-buttons */
+        .nav-button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+<body>
+<div class="hamburger">
+  hamburger
+</div>
+
+<div class="nav-button">
+  nav-button
+</div>
+
+<div class="nav-button">
+  nav-button
+</div>
+
+<div class="nav-button">
+  nav-button
+</div>
+
+<div class="nav-button">
+  nav-button
+</div>
+</body>
