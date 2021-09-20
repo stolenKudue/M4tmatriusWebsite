@@ -16,16 +16,21 @@
   <link rel="stylesheet" href="css/navigation.css">
   <!--  Burger button library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slimeBtn.css">
+
   <script src="js/Navigation.js"></script>
+
 
 </head>
 
 <body>
   <header role="banner">
     <nav role="navigation" id="nav">
-      <a href="index.html">Home</a>
-      <a href="bigNumbers.html">Writing BIG numbers</a>
-      <a href="calculations.html">Calculations</a>
+      <ul>
+        <li style="list-style: none;"><a href="index.html">Home</a></li>
+        <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
+        <li><a href="calculations.html">Calculations</a></li>
+      </ul>
     </nav>
     <nav role="navigation" id="mobileNav">
       <a href="javascript:void(0);" class="icon" onclick="toggleBurgerNav()">
@@ -41,11 +46,38 @@
 
   <main>
     <div class="container">
+        <div class="slime wrapper">
+          <button><a href="bigNumbers.html">
+            <div class="scale rotate-4">B</div>
+            <div class="scale rotate-2">I</div>
+            <div class="scale rotate-3">G</div>
+            <div class="scale rotate-1">&nbsp;</div>
+            <div class="scale rotate-2">N</div>
+            <div class="scale rotate-2">U</div>
+            <div class="scale rotate-2">M</div>
+            <div class="scale rotate-2">B</div>
+            <div class="scale rotate-2">E</div>
+            <div class="scale rotate-2">R</div>
+            <div class="scale rotate-2">S</div>
+          </a></button>
+        </div>
       <div>
-        Some text
-      </div>
-      <div>
-        some other text
+        <div class="slime wrapper">
+          <button><a href="calculations.html">
+            <div class="scale rotate-4">C</div>
+            <div class="scale rotate-2">A</div>
+            <div class="scale rotate-3">L</div>
+            <div class="scale rotate-1">C</div>
+            <div class="scale rotate-2">U</div>
+            <div class="scale rotate-2">L</div>
+            <div class="scale rotate-2">A</div>
+            <div class="scale rotate-2">T</div>
+            <div class="scale rotate-2">I</div>
+            <div class="scale rotate-2">O</div>
+            <div class="scale rotate-2">N</div>
+            <div class="scale rotate-2">S</div>
+          </a></button>
+        </div>
       </div>
       <div>
         last text

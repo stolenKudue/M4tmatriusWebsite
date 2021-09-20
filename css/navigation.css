@@ -30,6 +30,24 @@ a{
   background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
 }
 
+#nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-self: center;
+  align-items: center;
+}
+
+#nav li{
+  font-size: 24px;
+  list-style: none;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+  border: 1px dashed #9921e8;
+  border-left-width: 0px;
+}
 
 /*!* Add a grey background color on mouse-over *!*/
 /*#mobileNav a:hover {*/
@@ -37,7 +55,7 @@ a{
 /*  color: black;*/
 /*}*/
 
-@media only screen and (min-width: 701px) {
+@media only screen and (min-width: 1201px) {
   /* hide hamburger */
   #mobileNav {
     display: none;
@@ -49,7 +67,7 @@ a{
 }
 
 /* if browser window is smaller than max-width */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   /* show hamburger */
   #mobileNav {
     display: block;

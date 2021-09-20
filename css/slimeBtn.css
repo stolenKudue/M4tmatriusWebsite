@@ -1,0 +1,85 @@
+.slime * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*body {*/
+/*  height: 100vh;*/
+/*  background-color: #9921e8;*/
+/*  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+
+.wrapper {
+  height: 50px;
+  width: 165px;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slime button {
+  height: 100%;
+  cursor: pointer;
+  background-color: #08e1ae;
+  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+  border: none;
+  border-radius: 50px 50px 30px 30px;
+  transition: 1s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.slime button:active {
+  border: none;
+  outline: none;
+}
+
+.slime button a {
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgba(37, 61, 29, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slime button:hover {
+  border-radius: 100px 100px 20px 20px;
+  height: 45px;
+  width: 400px;
+}
+
+.slime button:hover .scale {
+  letter-spacing: 5px;
+  font-size: 25px;
+  transition: 1s;
+}
+
+.rotate-1, .rotate-2, .rotate-3, .rotate-4 {
+  transition: 1s;
+}
+
+.slime button:hover .rotate-1 {
+  transform: rotate(15deg);
+}
+
+.slime button:hover .rotate-2 {
+  transform: rotate(-15deg);
+}
+
+.slime button:hover .rotate-3 {
+  transform: rotate(10deg);
+}
+
+.slime button:hover .rotate-4 {
+  transform: rotate(-25deg);
+}
+
+.slime button:active {
+  filter: hue-rotate(90deg);
+}
