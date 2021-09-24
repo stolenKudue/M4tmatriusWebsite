@@ -37,6 +37,8 @@ a{
   background-color: #98de5b;
   justify-content: space-around;
   padding: 5px;
+  margin: 0.4em 1em 0.4em 1em;
+  border-radius: 10px;
 }
 
 #nav li{
@@ -45,6 +47,7 @@ a{
   /*padding-left: 10%;*/
   /*padding-right: 10%;*/
   background-image: linear-gradient(315deg, #08e1ae 40%, #98de5b 100%);
+  border-radius: 10px;
   /*border: 1px dashed #9921e8;*/
 }
 

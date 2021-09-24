@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Fredoka One", cursive;
+}
+
+body {
+    background: url("/img/Math background.jpg");
+    object-fit: cover;
+    /*linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),*/
+    font-size: 2em;
+}
+
+main{
+    background-color: #9921e8;
+    background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+    margin: 0.4em 1em 0.4em 1em;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: #98de5b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    /*height: 100vh;*/
+}
+
+a {
+    font-size: 1em;
+    padding: 4rem 2.5rem;
+    color: #252525;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.btn {
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/*Hover effect*/
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+/*Hover effect*/
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent
+    );
+    transition: all 650ms;
+}
+/*Hover effect*/
+.btn:hover:before {
+    left: 100%;
+}
+
+.btn-small{
+    font-size: 0.6em;
+    padding: 2rem 1rem;
+}
+
+.btn-xsmall{
+    font-size: 0.5em;
+    padding: 1.8rem 0.7rem;
+}
+
+.btn-xxsmall {
+    font-size: 0.4em;
+    padding: 1rem 0.3rem;
+}
+
+::placeholder{
+    font-family: "Fredoka One", cursive;
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    font-size: 0.23em;
+}
+
+/*Removes grey border around input field*/
+input[type="number"] {
+    border: 1px solid rgb(146, 148, 248);
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    font-size: 3em;
+    max-width: 150px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+
+}
+/*input[type="number"]::-webkit-color-swatch {*/
+/*    border: none;*/
+/*}*/
+
+.gameplay{
+    display: none;
+}
+
+#restartBtn {
+    color: red;
+/*    margin-right: 30em;
+    margin-bottom: 5em;*/
+}
+
+#triesLeft{
+    visibility: hidden;
+    text-align: center;
+}
+
+.endOfGame{
+    display: none;
+    text-align: center;
+}

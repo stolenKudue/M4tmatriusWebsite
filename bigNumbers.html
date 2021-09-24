@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-<h1>
-  Howdy
-</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing BIG numbers</title>
+
+    <link rel="stylesheet" href="css/bigNumbers.css">
+    <script src="js/bigNumbers.js"></script>
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="js/Navigation.js"></script>
+    <!--  Burger-button library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header role="banner">
+      <nav role="navigation" id="nav">
+        <ul>
+          <li style="list-style: none;"><a href="index.html">Home</a></li>
+          <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
+          <li><a href="calculations.html">Calculations</a></li>
+        </ul>
+      </nav>
+      <nav role="navigation" id="mobileNav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleBurgerNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a href="index.html" class="active">Home</a>
+        <div id="navLinks">
+          <a href="bigNumbers.html">Writing BIG numbers</a>
+          <a href="calculations.html">Calculations</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Writing BIG numbers</h1>
+      <div class="container">
+        <a id="getNumBtn" onclick="pickNum()" class="btn">Get number</a>
+      </div>
+      <div class="gameplay">
+        <div class="container">
+          <a id="restartBtn" onclick="restart()" class="btn btn-xxsmall">Start over?</a>
+          <div>
+            <p id="correctCount"></p>
+          </div>
+        </div>
+        <div class="container">
+          <a id="repeatBtn" onclick="repeatNum()" class="btn btn-xsmall">Repeat number</a>
+        </div>
+        <div class="container">
+          <input id="numInput" type="number" placeholder="Write number" required>
+        </div>
+        <div class="container">
+          <a id="submitBtn" onclick="checkNum()" class="btn btn-small">Check Answer</a>
+        </div>
+        <p id="triesLeft"></p>
+      </div>
+      <div class="endOfGame container">
+        <p>Good Try!</p>
+        <p id="endText"></p>
+        <a onclick="restart()" class="btn endOfGame">Try again?</a>
+      </div>
+
+    </main>
+  </body>
 </html>

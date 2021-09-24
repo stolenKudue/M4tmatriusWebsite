@@ -11,14 +11,28 @@
 
 body{
   font-family: "Fredoka One", cursive;
-  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  background: url("/img/Math background.jpg");
+  object-fit: cover;
 }
 
 main{
-
+  background-image: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+  height: 92vh;
+  margin: 0.4em 1em 0.4em 1em;
+  border-radius: 10px;
 }
 
-.grid-text{
-  grid-column-start: 2;
-  grid-row: 1 / span 2;
+h1{
+  text-align: center;
+  padding: 2%;
+}
+
+.grid-item{
+  margin: 10%;
+}
+
+@media only screen and (max-width: 740px) {
+  .grid-item{
+    margin: 5%;
+  }
 }
