@@ -2,15 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Calculations</title>
+
+  <link rel="stylesheet" href="css/navigation.css">
+  <!--  Burger-button library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/games.css">
 </head>
 
-
 <body>
+  <header role="banner">
+    <nav role="navigation" id="nav">
+      <ul>
+        <li style="list-style: none;"><a href="index.html">Home</a></li>
+        <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
+        <li><a href="calculations.html">Calculations</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation" id="mobileNav">
+      <a href="javascript:void(0);" class="icon" onclick="toggleBurgerNav()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+      <a href="index.html" class="active">Home</a>
+      <div id="navLinks">
+        <a href="bigNumbers.html">Writing BIG numbers</a>
+        <a href="calculations.html">Calculations</a>
+      </div>
+    </nav>
+  </header>
 
-  <nav role="navigation">
-    <a href="bigNumbers.html">jjj</a>
-  </nav>
+  <main>
+    <div id="startpage">
 
+      <h1 >Velkommen til M4tmatrius!</h1>
+      <p>Her kan du genere dine egne regnestykker. Du kan tilføje alle 4 typer regnestykker.
+        <br>
+        Decimaltal skal skrives med 2 decimaler.
+        <br>
+        God Fornøjelse! &#128208;
+      </p>
+      <p>Hvor mange cifre må der højst være i tallet til venstre? </p>
+      <input id="lDigitsInput" type="text" autofocus>
+      <!--    NO BREAK HERE -->
+      <br>
+      <p>Hvor mange cifre må der højst være i tallet til højre? </p>
+      <input id="rDigitsInput" type="text" autofocus>
+      <!--    NO BREAK HERE -->
+      <br>
+      <p>Hvor mange opgaver vil du regne? </p>
+      <input id="exercisesInput" type="text">
+      <!--    NO BREAK HERE -->
+      <br> <br> <br>
+
+      <button id="additionButton" onclick="addition()">Lav plusstykker + </button>
+      <button id="minusButton" onclick="minus()">Lav minusstykker - </button>
+      <button id="multiplyButton" onclick="multiply()">Lav gangestykker &times; </button>
+      <button id="divideButton" onclick="divide()">Lav divisionsstykker &divide; </button>
+
+
+    </div>
+
+<!--    NO BREAK HERE -->
+    <br>
+
+    <div id="exerciseDiv">
+      <p id="errorOutput"></p>
+
+      <table id="exerTable"></table> <!--Tabel til visning af opgaver -->
+      <button id="answerCheck" onclick="answers()" hidden>Tjek svar! </button>
+
+      <p id="results"></p>
+      <!--    NO BREAK HERE -->
+      <br>
+
+      <button id="clear" onclick="clearMath()" hidden>Ryd tidligere regnestykker</button>
+    </div>
+
+
+  </main>
 </body>
+
+<script src="js/Navigation.js"></script>
+<script src="js/calculations.js"></script>
+
 </html>
