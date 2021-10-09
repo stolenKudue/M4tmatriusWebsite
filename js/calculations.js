@@ -2,6 +2,10 @@ let lDigits, rDigits, exercises;
 let table = document.getElementById("exerTable");
 let totalExer = 0;
 
+document.getElementById("additionButton").addEventListener('click', addition);
+document.getElementById("minusButton").addEventListener('click', minus);
+document.getElementById("multiplyButton").addEventListener('click', multiply);
+document.getElementById("divideButton").addEventListener('click', divide);
 
 function addition(){
     mathExercises("+");

@@ -20,6 +20,7 @@
   <!--  Burger-button library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/games.css">
+  <link rel="stylesheet" href="css/calculations.css">
 
 </head>
 
@@ -33,7 +34,7 @@
       </ul>
     </nav>
     <nav role="navigation" id="mobileNav">
-      <a href="javascript:void(0);" class="icon" onclick="toggleBurgerNav()">
+      <a href="javascript:void(0);" id="burgerButton" class="icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </a>
       <a href="index.html" class="active">Home</a>
@@ -44,45 +45,40 @@
     </nav>
   </header>
 
-  <main>
-    <div id="startpage">
+  <main role="main">
+    <h1>Calculations</h1>
+    <div class="grid-container">
+      <div id="gameOptions" class="grid-item">
 
-      <h1 >Calculations</h1>
-      <p>Create your own calculations here!</p>
-      <p>Decimal numbers is written with 2 decimals.</p>
-      <p>Have fun! &#128208;</p>
+        <p>Create your own calculations here!</p>
+        <p>Decimal numbers is written with 2 decimals.</p>
+        <p>Have fun! &#128208;</p>
 
-      <p class="inputText">Input the max number of digits in the left number: </p>
-      <input id="lDigitsInput" type="text" autofocus>
-      <p class="inputText">Input the max number of digits in the right number: </p>
-      <input id="rDigitsInput" type="text" autofocus>
-      <p class="inputText">How many calculation would you like to do? </p>
-      <input id="exercisesInput" type="text">
+        <p class="inputText">Input the max number of digits in the left number: </p>
+        <input id="lDigitsInput" type="number" autofocus>
+        <p class="inputText">Input the max number of digits in the right number: </p>
+        <input id="rDigitsInput" type="number" autofocus>
+        <p class="inputText">How many calculation would you like to do? </p>
+        <input id="exercisesInput" type="number">
 
-      <button id="additionButton" onclick="addition()">Make Additions + </button>
-      <button id="minusButton" onclick="minus()">Make Subtractions - </button>
-      <button id="multiplyButton" onclick="multiply()">Make Multiplications &times; </button>
-      <button id="divideButton" onclick="divide()">Make Divisions &divide; </button>
+        <button id="additionButton" class="btn">Make Additions + </button>
+        <button id="minusButton" class="btn">Make Subtractions - </button>
+        <button id="multiplyButton" class="btn">Make Multiplications &times; </button>
+        <button id="divideButton" class="btn">Make Divisions &divide; </button>
 
+        <p id="errorOutput"></p>
+      </div>
 
+      <div id="exerciseDiv" class="grid-item">
+        <p>Yo</p>
+
+        <table id="exerTable"></table> <!--Tabel til visning af opgaver -->
+        <button id="answerCheck" onclick="answers()" hidden>Check answers! </button>
+
+        <p id="results"></p>
+        <button id="clear" onclick="clearMath()" hidden>Remove calculations</button>
+      </div>
     </div>
-
-<!--    NO BREAK HERE -->
-    <br>
-
-    <div id="exerciseDiv">
-      <p id="errorOutput"></p>
-
-      <table id="exerTable"></table> <!--Tabel til visning af opgaver -->
-      <button id="answerCheck" onclick="answers()" hidden>Check answers! </button>
-
-      <p id="results"></p>
-      <!--    NO BREAK HERE -->
-      <br>
-
-      <button id="clear" onclick="clearMath()" hidden>Remove calculations</button>
-    </div>
-
 
   </main>
 </body>

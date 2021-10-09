@@ -1,3 +1,5 @@
+document.getElementById("burgerButton").addEventListener("click", toggleBurgerNav);
+
 function toggleBurgerNav() {
   let links = document.getElementById("navLinks");
   if (links.style.display === "block") {
