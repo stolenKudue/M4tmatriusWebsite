@@ -6,6 +6,8 @@ document.getElementById("additionButton").addEventListener('click', addition);
 document.getElementById("minusButton").addEventListener('click', minus);
 document.getElementById("multiplyButton").addEventListener('click', multiply);
 document.getElementById("divideButton").addEventListener('click', divide);
+document.getElementById("answerCheck").addEventListener('click', answers);
+document.getElementById("clear").addEventListener('click', clearMath);
 
 function addition(){
     mathExercises("+");
@@ -46,7 +48,7 @@ function mathExercises(operator){
             row.insertCell(2).innerHTML = rNum;
             row.insertCell(3).innerHTML = "=";
             //Celle med svarinput:
-            row.insertCell(4).innerHTML = "<input id='answer" + totalExer +"' type='text' size='5'>";
+            row.insertCell(4).innerHTML = "<input type='number' id='answer" + totalExer +"' type='text' size='5'>";
 
             //opdatere antallet af opgaver udfra antal rækker i tabellen
             totalExer = table.rows.length;
@@ -111,12 +113,14 @@ function answers(){
         //.toFixed afrunder alle svar til 2 decimaler.
         if ((mathFromString[operator](lNum, rNum)).toFixed(2) == answerValue.toFixed(2)){
 
-            answer.style.backgroundColor = "lightgreen";
+            answer.style.backgroundColor = "lawngreen";
+            answer.style.backgroundImage = "none";
 
             correct++
         }
         else {
             answer.style.backgroundColor = "red";
+            answer.style.backgroundImage = "none";
         }
     }
     //Udskriver antal rigtige til brugeren
