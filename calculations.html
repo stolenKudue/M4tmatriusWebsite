@@ -2,19 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!--  Security Policies-->
+  <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src-elem 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/;
+        font-src https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/;
+        img-src 'self';
+        script-src-elem 'self';
+        form-action 'none';
+  ">
+  <!--    base-uri 'self' > WHAT DOES IT DO?!-->
+
   <title>Calculations</title>
 
   <link rel="stylesheet" href="css/navigation.css">
   <!--  Burger-button library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/games.css">
+
 </head>
 
 <body>
   <header role="banner">
     <nav role="navigation" id="nav">
       <ul>
-        <li style="list-style: none;"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
         <li><a href="calculations.html">Calculations</a></li>
       </ul>
@@ -34,30 +46,22 @@
   <main>
     <div id="startpage">
 
-      <h1 >Velkommen til M4tmatrius!</h1>
-      <p>Her kan du genere dine egne regnestykker. Du kan tilføje alle 4 typer regnestykker.
-        <br>
-        Decimaltal skal skrives med 2 decimaler.
-        <br>
-        God Fornøjelse! &#128208;
-      </p>
-      <p>Hvor mange cifre må der højst være i tallet til venstre? </p>
-      <input id="lDigitsInput" type="text" autofocus>
-      <!--    NO BREAK HERE -->
-      <br>
-      <p>Hvor mange cifre må der højst være i tallet til højre? </p>
-      <input id="rDigitsInput" type="text" autofocus>
-      <!--    NO BREAK HERE -->
-      <br>
-      <p>Hvor mange opgaver vil du regne? </p>
-      <input id="exercisesInput" type="text">
-      <!--    NO BREAK HERE -->
-      <br> <br> <br>
+      <h1 >Calculations</h1>
+      <p>Create your own calculations here!</p>
+      <p>Decimal numbers is written with 2 decimals.</p>
+      <p>Have fun! &#128208;</p>
 
-      <button id="additionButton" onclick="addition()">Lav plusstykker + </button>
-      <button id="minusButton" onclick="minus()">Lav minusstykker - </button>
-      <button id="multiplyButton" onclick="multiply()">Lav gangestykker &times; </button>
-      <button id="divideButton" onclick="divide()">Lav divisionsstykker &divide; </button>
+      <p class="inputText">Input the max number of digits in the left number: </p>
+      <input id="lDigitsInput" type="text" autofocus>
+      <p class="inputText">Input the max number of digits in the right number: </p>
+      <input id="rDigitsInput" type="text" autofocus>
+      <p class="inputText">How many calculation would you like to do? </p>
+      <input id="exercisesInput" type="text">
+
+      <button id="additionButton" onclick="addition()">Make Additions + </button>
+      <button id="minusButton" onclick="minus()">Make Subtractions - </button>
+      <button id="multiplyButton" onclick="multiply()">Make Multiplications &times; </button>
+      <button id="divideButton" onclick="divide()">Make Divisions &divide; </button>
 
 
     </div>
@@ -69,13 +73,13 @@
       <p id="errorOutput"></p>
 
       <table id="exerTable"></table> <!--Tabel til visning af opgaver -->
-      <button id="answerCheck" onclick="answers()" hidden>Tjek svar! </button>
+      <button id="answerCheck" onclick="answers()" hidden>Check answers! </button>
 
       <p id="results"></p>
       <!--    NO BREAK HERE -->
       <br>
 
-      <button id="clear" onclick="clearMath()" hidden>Ryd tidligere regnestykker</button>
+      <button id="clear" onclick="clearMath()" hidden>Remove calculations</button>
     </div>
 
 

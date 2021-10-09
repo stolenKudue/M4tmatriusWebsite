@@ -65,13 +65,13 @@ function inputValidation(){
 
     //Undersøger lDigitsInput og rDigitInput er korrekte.
     if ((lDigits <= 0 || rDigits <= 0) || (lDigits > 5 || rDigits > 5) || (Number.isNaN(lDigits) || Number.isNaN(rDigits))){
-        document.getElementById("errorOutput").innerHTML = " Antallet af cifre skal være mellem 1-5.";
+        document.getElementById("errorOutput").innerHTML = "Number of digits has to be between 1-5.";
         return false;
     }
 
     //Undersøger exercisesInput er korrekt.
     if (exercises <= 0 || exercises > 150 || Number.isNaN(exercises)){
-        document.getElementById("errorOutput").innerHTML = "Du skal indtaste et antal øvelser mellem 1 - 150.";
+        document.getElementById("errorOutput").innerHTML = "Please pick between 1 - 150 calculations.";
         return false;
     }
     else {
@@ -116,12 +116,12 @@ function answers(){
         }
     }
     //Udskriver antal rigtige til brugeren
-    document.getElementById("results").innerHTML = "Du har " + correct + " rigtige ud af " + totalExer + " opgaver."
+    document.getElementById("results").innerHTML = "You got " + correct + " right out of" + totalExer + " exercises."
 }
 
 //nulstiller alle elementer.
 function clearMath(){
-    if (confirm('Er du sikker på, du vil slette alle dine svar og opgaver?')) {
+    if (confirm('Do you really want to delete all your calculations?')) {
         document.getElementById("exerTable").innerHTML = "";
         document.getElementById("results").innerHTML = "";
         document.getElementById("answerCheck").style.display = "none";
