@@ -136,6 +136,29 @@ input[type="number"]::-webkit-color-swatch-wrapper {
     text-align: center;
 }
 
-#gameOptions input{
-  margin: 2%;
+#gameOptions input, #gameOptions label, #gameOptions p{
+  font-size: 3vw;
+  margin: 3px;
+  text-align: center;
+}
+
+#gameOptions button{
+  margin: 3px;
+}
+
+#errorOutput{
+  color: yellow;
+}
+
+
+@media only screen and (max-width: 700px) {
+  #gameOptions input, #gameOptions label, #gameOptions p{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1050px){
+  #gameOptions input, #gameOptions label, #gameOptions p{
+  font-size: 32px;
+  }
 }

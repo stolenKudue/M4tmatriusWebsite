@@ -51,22 +51,28 @@
     <div class="grid-container">
       <div id="gameOptions" class="grid-item">
 
-        <p>Create your own calculations here!</p>
-        <p>Decimal numbers is written with 2 decimals.</p>
-        <p>Have fun! &#128208;</p>
+        <p>Create your own calculations here! <br>
+        Decimal numbers is written with 2 decimals. <br>
+        Have fun! &#128208;</p>
 
-        <label for="lDigitsInput" class="inputText">Input the max number of digits in the left number: </label>
-        <input id="lDigitsInput" type="number" autofocus>
-        <label for="rDigitsInput" class="inputText">Input the max number of digits in the right number: </label>
-        <input id="rDigitsInput" type="number" autofocus>
-        <label for="exercisesInput" class="inputText">How many calculation would you like to do? </label>
-        <input id="exercisesInput" type="number">
-
-        <button id="additionButton" class="btn">Make Additions + </button>
-        <button id="minusButton" class="btn">Make Subtractions - </button>
-        <button id="multiplyButton" class="btn">Make Multiplications &times; </button>
-        <button id="divideButton" class="btn">Make Divisions &divide; </button>
-
+        <div>
+          <label for="lDigitsInput" class="inputText">Max number of digits to the left: </label>
+          <input id="lDigitsInput" type="number" autofocus>
+        </div>
+        <div>
+          <label for="rDigitsInput" class="inputText">Max number of digits to the right: </label>
+          <input id="rDigitsInput" type="number" autofocus>
+        </div>
+        <div>
+          <label for="exercisesInput" class="inputText">How many calculation would you like to do? </label>
+          <input id="exercisesInput" type="number">
+        </div>
+        <div id="buttons">
+        <button id="additionButton" class="btn btn-small">Make Additions + </button>
+        <button id="minusButton" class="btn btn-small">Make Subtractions - </button>
+        <button id="multiplyButton" class="btn btn-small">Make Multiplications &times; </button>
+        <button id="divideButton" class="btn btn-small">Make Divisions &divide; </button>
+        </div>
         <p id="errorOutput"></p>
       </div>
 
