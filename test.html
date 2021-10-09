@@ -2,51 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test</title>
-    <style>
-      @media only screen and (min-width: 701px) {
-        /* hide the hamburger */
-        .hamburger {
-          display: none;
-        }
-        /* show all the nav-buttons */
-        .nav-button {
-          display: block;
-        }
-      }
-      /* if browser window is small (max-width) */
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writing BIG numbers</title>
 
-      @media only screen and (max-width: 700px) {
-        /* show everything with the hamburger class */
-        .hamburger {
-          display: block;
-        }
-        /* hide all the nav-buttons */
-        .nav-button {
-          display: none;
-        }
-      }
-    </style>
-  </head>
+  <link rel="stylesheet" href="css/games.css">
+  <script src="js/bigNumbers.js"></script>
+  <link rel="stylesheet" href="css/navigation.css">
+  <script src="js/Navigation.js"></script>
+  <!--  Burger-button library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
-<div class="hamburger">
-  hamburger
-</div>
-
-<div class="nav-button">
-  nav-button
-</div>
-
-<div class="nav-button">
-  nav-button
-</div>
-
-<div class="nav-button">
-  nav-button
-</div>
-
-<div class="nav-button">
-  nav-button
-</div>
+<header role="banner">
+  <nav role="navigation" id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
+      <li><a href="calculations.html">Calculations</a></li>
+    </ul>
+  </nav>
+  <nav role="navigation" id="mobileNav">
+    <a href="javascript:void(0);" id="burgerButton" class="icon">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+    <a href="index.html" class="active">Home</a>
+    <div id="navLinks">
+      <a href="bigNumbers.html">Writing BIG numbers</a>
+      <a href="calculations.html">Calculations</a>
+    </div>
+  </nav>
+</header>
 </body>
+
+<script src="js/Navigation.js"></script>
+<script src="js/calculations.js"></script>
+
+</html>

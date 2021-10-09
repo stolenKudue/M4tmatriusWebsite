@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--  Security Policies-->
   <meta http-equiv="Content-Security-Policy" content="
         default-src 'none';
@@ -54,11 +55,11 @@
         <p>Decimal numbers is written with 2 decimals.</p>
         <p>Have fun! &#128208;</p>
 
-        <p class="inputText">Input the max number of digits in the left number: </p>
+        <label for="lDigitsInput" class="inputText">Input the max number of digits in the left number: </label>
         <input id="lDigitsInput" type="number" autofocus>
-        <p class="inputText">Input the max number of digits in the right number: </p>
+        <label for="rDigitsInput" class="inputText">Input the max number of digits in the right number: </label>
         <input id="rDigitsInput" type="number" autofocus>
-        <p class="inputText">How many calculation would you like to do? </p>
+        <label for="exercisesInput" class="inputText">How many calculation would you like to do? </label>
         <input id="exercisesInput" type="number">
 
         <button id="additionButton" class="btn">Make Additions + </button>

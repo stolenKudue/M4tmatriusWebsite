@@ -135,3 +135,7 @@ input[type="number"]::-webkit-color-swatch-wrapper {
     display: none;
     text-align: center;
 }
+
+#gameOptions input{
+  margin: 2%;
+}
