@@ -3,9 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>M4tmatrius</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--  Security Policies-->
+  <meta http-equiv="Content-Security-Policy" content="
+        default-src 'none';
+        style-src-elem 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/;
+        font-src https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/;
+        img-src 'self';
+        script-src-elem 'self';
+        form-action 'none';
+  ">
+  <!--    base-uri 'self' > WHAT DOES IT DO?!-->
 
   <link rel="stylesheet" href="css/main.css">
 
@@ -14,23 +25,19 @@
   <link rel="stylesheet" href="css/slimeBtn.css">
   <!--  Burger-button library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <script src="js/Navigation.js"></script>
-
-
 </head>
 
 <body>
   <header role="banner">
     <nav role="navigation" id="nav">
       <ul>
-        <li style="list-style: none;"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="bigNumbers.html">Writing BIG numbers</a></li>
         <li><a href="calculations.html">Calculations</a></li>
       </ul>
     </nav>
     <nav role="navigation" id="mobileNav">
-      <a href="javascript:void(0);" class="icon" onclick="toggleBurgerNav()">
+      <a href="javascript:void(0);" id="burgerButton" class="icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </a>
       <a href="index.html" class="active">Home</a>
@@ -91,5 +98,7 @@
           <!--    ADD STUFF HERE-->
   </footer>
 </body>
+
+<script src="js/Navigation.js"></script>
 
 </html>

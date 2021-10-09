@@ -4,6 +4,13 @@ let counter = 0;
 let correctCounter = 0;
 let tries;
 
+document.getElementById("getNumBtn").addEventListener('click', pickNum);
+document.getElementById("restartBtn").addEventListener('click', restart);
+document.getElementById("repeatBtn").addEventListener('click', repeatNum);
+document.getElementById("submitBtn").addEventListener('click', checkNum);
+document.getElementById("restart").addEventListener('click', restart);
+
+
 function pickNum() {
     document.getElementById("getNumBtn").style.display = "none";
     gameplayDisplay("block");
