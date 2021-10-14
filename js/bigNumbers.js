@@ -50,7 +50,6 @@ function checkNum() {
         correctCounter++;
         correctCount.innerText = "You got " + correctCounter + " out of " + counter + " right!"
         playRandomNum();
-        console.log("True " + counter)
     }
     else {
         let triesText = triesLeft.innerText = "Try again! You got: "
@@ -74,11 +73,9 @@ function checkNum() {
                 triesLeft.innerText = "Try this number instead!";
                 inputValue = "";
                 playRandomNum();
-                console.log("0")
                 return;
         }
         tries--;
-        console.log("False")
         return tries;
     }
 }
