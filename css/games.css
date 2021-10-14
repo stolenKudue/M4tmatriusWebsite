@@ -20,9 +20,10 @@ main{
 }
 
 h1{
-    font-size: 1.5em;
+    font-size: 150%;
     text-align: center;
     color: #98de5b;
+  word-break: break-word;
 }
 
 h2{
@@ -145,10 +146,16 @@ input[type="number"]::-webkit-color-swatch-wrapper {
   font-size: 3vw;
   margin: 3px;
   text-align: center;
+  word-wrap: break-word;
+}
+
+#gameOptions div{
+  justify-content: center;
+  word-wrap: break-word;
 }
 
 #gameOptions button{
-  margin: 3px;
+  margin: 10px;
 }
 
 #errorOutput{
@@ -177,3 +184,4 @@ input[type="number"]::-webkit-color-swatch-wrapper {
 #jokesMain p, button{
   margin: 2%;
 }
+

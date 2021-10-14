@@ -48,36 +48,38 @@
   <main role="main">
     <h1>Calculations</h1>
     <div class="grid-container">
-      <div id="gameOptions" class="grid-item">
+      <div id="gameOptions" class="grid-item center">
 
         <p>Create your own calculations here! <br>
         Decimal numbers is written with 2 decimals. <br>
         Have fun! &#128208;</p>
 
         <div>
-          <label for="lDigitsInput" class="inputText">Max number of digits to the left: </label>
           <input id="lDigitsInput" type="number" autofocus>
+          <label for="lDigitsInput" class="inputText">Max number of digits to the left.</label>
         </div>
         <div>
-          <label for="rDigitsInput" class="inputText">Max number of digits to the right: </label>
-          <input id="rDigitsInput" type="number" autofocus>
+          <input id="rDigitsInput" type="number">
+          <label for="rDigitsInput" class="inputText">Max number of digits to the right.</label>
         </div>
         <div>
-          <label for="exercisesInput" class="inputText">How many calculation would you like to do? </label>
           <input id="exercisesInput" type="number">
+          <label for="exercisesInput" class="inputText">Number of calculation would you like to do.</label>
         </div>
         <div id="buttons">
-        <button id="additionButton" class="btn btn-small">Make Additions + </button>
-        <button id="minusButton" class="btn btn-small">Make Subtractions - </button>
-        <button id="multiplyButton" class="btn btn-small">Make Multiplications &times; </button>
-        <button id="divideButton" class="btn btn-small">Make Divisions &divide; </button>
+          <div class="center">
+            <button id="additionButton" class="btn btn-small">Make Additions + </button>
+            <button id="minusButton" class="btn btn-small">Make Subtractions - </button>
+          </div>
+          <div class="center">
+            <button id="multiplyButton" class="btn btn-small">Make Multiplications &times; </button>
+            <button id="divideButton" class="btn btn-small">Make Divisions &divide; </button>
+          </div>
         </div>
         <p id="errorOutput"></p>
       </div>
 
       <div id="exerciseDiv" class="grid-item">
-        <p>Yo</p>
-
         <table id="exerTable"></table> <!--Tabel til visning af opgaver -->
         <button id="answerCheck" class="btn btn-small" hidden>Check answers! </button>
 

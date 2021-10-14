@@ -1,14 +1,16 @@
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-around;
   justify-items: center;
 }
 
 .grid-item{
-  /*MAKE THIS WORK!!!!!!!!*/
-  justify-content: center;
-  align-content: center;
-  justify-self: center;
-  align-self: center;
+  margin-left: 10px;
+}
+
+.center{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }

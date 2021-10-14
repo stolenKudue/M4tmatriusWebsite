@@ -1,5 +1,5 @@
 let lDigits, rDigits, exercises;
-let table = document.getElementById("exerTable");
+const table = document.getElementById("exerTable");
 let totalExer = 0;
 
 document.getElementById("additionButton").addEventListener('click', addition);
@@ -124,7 +124,7 @@ function answers(){
         }
     }
     //Udskriver antal rigtige til brugeren
-    document.getElementById("results").innerHTML = "You got " + correct + " right out of" + totalExer + " exercises."
+    document.getElementById("results").innerHTML = "You got " + correct + " right out of " + totalExer + " exercises."
 }
 
 //nulstiller alle elementer.
