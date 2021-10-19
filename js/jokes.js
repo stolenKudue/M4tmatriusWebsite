@@ -18,12 +18,10 @@ function getJoke(){
         if (request.status === 200 && typeof data.joke == "undefined") { //undefined catch?
             jokeContent.innerText = data.setup;
             jokeAnswer.innerText = data.delivery;
-            console.log(data.setup);
         }
         else if (request.status === 200 && typeof data.setup == "undefined"){
             jokeContent.innerText = data.joke;
             jokeAnswer.innerText = "";
-            console.log(data.joke + " setup: " + data.setup);
         }
         else {
             console.log('Error')
